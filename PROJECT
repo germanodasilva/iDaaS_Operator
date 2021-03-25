@@ -1,0 +1,15 @@
+domain: idaas.io
+layout: helm.sdk.operatorframework.io/v1
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: idaas-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: idaas.io
+  group: idaas
+  kind: IDaaS
+  version: v1alpha1
+version: "3"
